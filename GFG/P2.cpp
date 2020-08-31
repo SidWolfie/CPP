@@ -5,37 +5,35 @@ using namespace std;
 
 int main() 
 {
-    int i, j, n, t;
-    int A[n];
+    int n, i, t;
 
     cout << "Enter Size Of Array : ";
-    cin >> n;
+    cin >> n ;
 
-    cout << "Enter Array : \n";
+    cout << "Enter Array : " << endl;
+
+    int A[n];
     for (i = 0; i < n; i++)
     {
         cin >> A[i];
     }
-    
 
     for (i = 0; i < n; i++)
     {
-        for (j = i; j < n; j++)
+        for (int j = i+1; j < n; j++)
         {
             if (A[i]>A[j])
             {
-                t=A[i];
-                A[i]=A[j];
-                A[j]=t;
+                t = A[i];
+                A[i] = A[j];
+                A[j] = t;
             }
-        }     
+        }
     }
-
+    
     for (i = 0; i < n; i++)
     {
         cout << A[i] << " ";
     }
-
-return 0;
-    
 }
+
