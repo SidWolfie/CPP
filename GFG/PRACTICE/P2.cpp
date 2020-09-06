@@ -1,4 +1,4 @@
-/* Sort An Array. */
+/* Sort An Array */
 
 #include <iostream>
 using namespace std;

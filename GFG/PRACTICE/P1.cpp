@@ -1,4 +1,4 @@
-/* Find pairs from array whose sum is equal to a given number.  */
+/* Find pairs from array whose sum is equal to a given number */
 
 #include <iostream>
 using namespace std;
